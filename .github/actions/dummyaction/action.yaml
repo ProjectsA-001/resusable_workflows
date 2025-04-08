@@ -1,0 +1,11 @@
+name: Build Action
+description: "jus an action"
+inputs:
+  target:
+    required: true
+    description: "just a flag"
+runs:
+  using: composite
+  steps:
+    - run: echo "Building ${{ inputs.target }}"
+      shell: bash
