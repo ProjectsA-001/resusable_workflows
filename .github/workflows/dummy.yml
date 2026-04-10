@@ -22,7 +22,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_AK }}
           aws-secret-access-key: ${{ secrets.AWS_SK }}
-          aws-region: ${{ vars.aws_region }}
+          aws-region: ${{ vars.AWS_DEFAULT_REGION }}
 
       - name: "Execution"
         run: |
